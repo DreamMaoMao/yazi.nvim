@@ -73,7 +73,7 @@ local function yazi(path)
 	end
 
 	prev_win = vim.api.nvim_get_current_win()
-	path = vim.fn.expand('%:p:h')
+	path = vim.fn.expand('%:p')
 
 	win, buffer = open_floating_window()
 
